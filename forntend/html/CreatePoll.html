@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/poll.css">
+    <link rel="shortcut icon" href="/imgs/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b1663127a0.js" crossorigin="anonymous"></script>
+    <style>
+        .backBtn {
+            position: fixed;
+            left: 3%;
+            top: 1%;
+            height: 50px;
+            width: 50px;
+            background-color: rgb(238 238 238);
+            border: 1px solid gray;
+            border-radius: 50px;
+            font-size: 25px;
+            box-shadow: 2px 3px 5px rgb(180, 172, 172);
+            margin-top: 2%;
+            transition: background 0.5s ease;
+        }
+    
+        .backBtn:hover {
+            cursor: pointer;
+            transition: background 0.5s ease;
+            background-color: rgb(216, 215, 215);
+        }
+    
+        .backBtn span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+    
+        .backBtn span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="backBtn" class="backBtn">
+        <span><i class="fa-solid fa-arrow-left-long"></i></span>
+    </div>
+    <form id="pollForm" action="/ThankYou">
+        <div class="poll">
+            <div class="poll-heading">
+                <h3 class="poll-title poll-body">
+                    <center><label for="Question"> Ask Your Question.</label></center><br><input type="text" name="Question"
+                        id="Question" required>
+                </h3>
+            </div>
+            <div class="poll-body" id="Poll_body">
+                <ul id="option-body">
+                    <li id="dummy">
+                        <label><input disabled="true" type="radio" name="pollOptions"
+                                value=""><span>Option-1</span></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="poll-footer">
+                <button id="submit" type="submit" class="mybtn">Poll It</button>
+                <div class="mybtn" id="AddOption" onclick="createOption()">Add Option</div>
+            </div>
+        </div>
+    </form>
+    <script>
+        document.getElementById("backBtn").onclick = function () {
+            location.href = "dashboard";
+        };
+    </script>
+    <script src="/Js/poll.js"></script>
+</body>
+</html>

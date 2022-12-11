@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contect.css">
+    <title>Poll It</title>
+    <script src="https://kit.fontawesome.com/b1663127a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="backBtn" class="backBtn">
+        <span><i class="fa-solid fa-arrow-left-long"></i></span>
+    </div>
+    <div class="contain">
+    
+        <div class="wrapper">
+    
+            <div class="form">
+                <h4 style="font-size: 25px;">Poll It services</h4>
+                <h2 class="form-headlin">Send us a message</h2>
+                <form id="submit-form" action="/ThankYou">
+                    <p>
+                        <input id="name" class="form-input" type="text" placeholder="Your Name*">
+                        <small class="name-error"></small>
+                    </p>
+                    <p>
+                        <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                        <small class="name-error"></small>
+                    </p>
+                    <p class="full-width">
+                        <input id="company-name" class="form-input" type="text" placeholder="Company Name*" required>
+                        <small></small>
+                    </p>
+                    <p class="full-width">
+                        <textarea minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*"
+                            required></textarea>
+                        <small></small>
+                    </p>
+                    <p class="full-width">
+                        <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive
+                        communications by call / email about Company's services.
+                    </p>
+                    <p class="full-width">
+                        <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                        <button class="reset-btn" onclick="reset()">Reset</button>
+                    </p>
+                    <center>
+                        <div class="contacts contact-wrapper">
+                            <ul>
+                                <li>Feel Free To Contect Our Team</li>
+                                <span class="hightlight-contact-info">
+                                    <li style="font-size: 18px;" class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> rajputamitsinh.v.092+work@gmail.com</li>
+                                    <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91 9265389177</span></li>
+                                </span>
+                            </ul>
+                        </div>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("backBtn").onclick = function () {
+            location.href = "dashboard";
+        };
+    </script>
+</body>
+</html>
