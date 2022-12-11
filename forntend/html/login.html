@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll it|Log In</title>
+    <link rel="stylesheet" type="text/css" href="/login.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Nunito+Sans&family=PT+Sans&family=Qahiri&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b1663127a0.js" crossorigin="anonymous"></script>
+</head>
+<body">
+    <div class="container">
+        <div>
+            <div class="sideBar ">
+                <img src="./imgs/Light_poll_it.jpg" alt="Poll It">
+            </div>
+        </div>
+        <div class="Login">
+            <p class="heading">Welcome back...</p>
+            <hr style="position:relative; transform: translateY(1.2rem);">
+            <p id="title_form">Log In Form</p>
+            <!-- <hr style="position: relative;transform: translateY(2.2rem); z-index: -1;"> -->
+            <div class="form_container">
+                <form class="form" action="/login" autocomplete="off" method="post">
+                    <label for="UserName" id="Lusername">User Name</label>
+                    <input type="text" name="UserName" id="UserName" placeholder="Enter Username"> <label for="password" id="Lpassword">Password</label>
+                    <input type="password" name="password" id="Userpassword" autocomplete="true" placeholder="Enter Your password">
+                    <button id="Lsubmit" value="">Log In</button>
+                    <hr style="width:80%; position:relative; transform: translateY(0.7rem); z-index: -2;">
+                    <span style="background-color: #e8e1e1; padding: 0px 5%;">or</span>
+                    <a href="/signup" style="margin-top:3%;">Don't have an Account? </a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script> -->
+    </body>
+
+</html>

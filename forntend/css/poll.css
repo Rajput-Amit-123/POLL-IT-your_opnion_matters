@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #eee;
+    color: #111;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.25rem 0 0.25rem 0;
+}
+
+.poll {
+    background-color: #fff;
+    color: #333;
+    width: 30vw;
+    margin: 1.75rem auto 1rem auto;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.poll-heading {
+    padding: 1rem;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, transparent, #333, transparent) 1;
+}
+.poll-heading h3 input{
+    padding: 0.3rem 0.5rem;
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+    border: 3px double black;
+    border-radius: 12px;
+
+}
+
+.poll-body {
+    padding: 1rem;
+}
+
+.poll-body ul {
+    list-style-type: none;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.poll-body li label {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.poll-body li label:hover {
+    background-color: #eee;
+}
+
+.poll-body li:first-child label {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.poll-body li:last-child label {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.poll-body li label input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.poll-body li label input[type="radio"]:checked+span {
+    font-weight: bold;
+}
+
+.poll-footer {
+    padding-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.option-inp{
+    width: 80%;
+    padding: 5px 3px;
+}
+.append-true{
+   font-size: 22px;
+   margin: 0px 2px;
+   cursor: pointer;
+}
+.mybtn{
+    background-color: #777;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 8rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin: 0px 10px;
+    transition: background-color 0.2s;
+}
+
+.poll-footer button:hover {
+    background-color: #333;
+}
+
+.poll-footer button:active {
+    background-color: #111;
+}
+.poll-footer div:hover {
+    background-color: #333;
+}
+
+.poll-footer div:active {
+    background-color: rgb(146, 107, 107);
+}
+
+@media(max-width: 1200px) {
+    .poll {
+        width: 50%;
+    }
+}
+
+@media(max-width: 992px) {
+
+    .poll {
+        width: 60%;
+    }
+}
+
+@media(max-width:767px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .poll {
+        width: 80%;
+    }
+}
